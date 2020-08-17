@@ -1134,4 +1134,26 @@ F 3 "" H 10225 3575 50  0001 C CNN
 	1    10225 3575
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F40984F
+P 8725 5350
+F 0 "H1" H 8825 5399 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8825 5308 50  0000 L CNN
+F 2 "TH-XWhatsIt:ChassisGnd" H 8725 5350 50  0001 C CNN
+F 3 "~" H 8725 5350 50  0001 C CNN
+	1    8725 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR06
+U 1 1 5F40CF6A
+P 8725 5450
+F 0 "#PWR06" H 8725 5200 50  0001 C CNN
+F 1 "GNDA" H 8730 5277 50  0000 C CNN
+F 2 "" H 8725 5450 50  0001 C CNN
+F 3 "" H 8725 5450 50  0001 C CNN
+	1    8725 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
