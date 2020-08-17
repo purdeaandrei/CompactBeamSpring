@@ -115,24 +115,24 @@ Wire Wire Line
 Connection ~ 10275 1400
 Wire Wire Line
 	10275 1400 10275 1425
-Text GLabel 9850 3525 2    50   Output ~ 0
+Text GLabel 9500 3575 2    50   Output ~ 0
 CLOCK
-NoConn ~ 9850 2725
-Text GLabel 8450 3825 0    50   Input ~ 0
+NoConn ~ 9500 2775
+Text GLabel 8100 3875 0    50   Input ~ 0
 ROW1
-Text GLabel 8450 3325 0    50   Input ~ 0
+Text GLabel 8100 3375 0    50   Input ~ 0
 ROW2
-Text GLabel 8450 3725 0    50   Input ~ 0
+Text GLabel 8100 3775 0    50   Input ~ 0
 ROW3
-Text GLabel 8450 3525 0    50   Input ~ 0
+Text GLabel 8100 3575 0    50   Input ~ 0
 ROW4
-Text GLabel 8450 3425 0    50   Input ~ 0
+Text GLabel 8100 3475 0    50   Input ~ 0
 ROW5
-Text GLabel 8450 3625 0    50   Input ~ 0
+Text GLabel 8100 3675 0    50   Input ~ 0
 ROW6
-Text GLabel 8450 3225 0    50   Input ~ 0
+Text GLabel 8100 3275 0    50   Input ~ 0
 ROW7
-Text GLabel 8450 3125 0    50   Input ~ 0
+Text GLabel 8100 3175 0    50   Input ~ 0
 ROW8
 $Comp
 L 74xx:74HCT595 U4
@@ -319,7 +319,7 @@ Text GLabel 3500 3375 2    50   Output ~ 0
 ROW3
 Text GLabel 3500 2775 2    50   Output ~ 0
 ROW4
-Text GLabel 9850 3425 2    50   Output ~ 0
+Text GLabel 9500 3475 2    50   Output ~ 0
 LOADCOL
 Text GLabel 2675 5875 0    50   Input ~ 0
 COL9
@@ -333,7 +333,7 @@ Text GLabel 2675 5475 0    50   Input ~ 0
 COL13
 Text GLabel 2675 5375 0    50   Input ~ 0
 COL14
-Text GLabel 9850 3725 2    50   Output ~ 0
+Text GLabel 9500 3775 2    50   Output ~ 0
 MOSI
 Text GLabel 8475 1200 0    50   Input ~ 0
 MOSI
@@ -360,7 +360,7 @@ F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21897a.pdf" H 9075 1400 50 
 	1    9075 1400
 	1    0    0    -1  
 $EndComp
-Text GLabel 9850 3325 2    50   Output ~ 0
+Text GLabel 9500 3375 2    50   Output ~ 0
 ~SELECTDAC
 Text GLabel 8475 1400 0    50   Input ~ 0
 ~SELECTDAC
@@ -504,12 +504,12 @@ $EndComp
 $Comp
 L power:+5VD #PWR027
 U 1 1 5E81915B
-P 10750 3025
-F 0 "#PWR027" H 10750 2875 50  0001 C CNN
-F 1 "+5VD" V 10765 3153 50  0000 L CNN
-F 2 "" H 10750 3025 50  0001 C CNN
-F 3 "" H 10750 3025 50  0001 C CNN
-	1    10750 3025
+P 10400 3075
+F 0 "#PWR027" H 10400 2925 50  0001 C CNN
+F 1 "+5VD" V 10415 3203 50  0000 L CNN
+F 2 "" H 10400 3075 50  0001 C CNN
+F 3 "" H 10400 3075 50  0001 C CNN
+	1    10400 3075
 	0    1    1    0   
 $EndComp
 $Comp
@@ -548,12 +548,12 @@ $EndComp
 $Comp
 L power:GNDD #PWR023
 U 1 1 5E823659
-P 10750 2825
-F 0 "#PWR023" H 10750 2575 50  0001 C CNN
-F 1 "GNDD" V 10754 2715 50  0000 R CNN
-F 2 "" H 10750 2825 50  0001 C CNN
-F 3 "" H 10750 2825 50  0001 C CNN
-	1    10750 2825
+P 10400 2875
+F 0 "#PWR023" H 10400 2625 50  0001 C CNN
+F 1 "GNDD" V 10404 2765 50  0000 R CNN
+F 2 "" H 10400 2875 50  0001 C CNN
+F 3 "" H 10400 2875 50  0001 C CNN
+	1    10400 2875
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -702,30 +702,30 @@ $EndComp
 $Comp
 L power:+5VA #PWR025
 U 1 1 5E8BFA71
-P 10750 2925
-F 0 "#PWR025" H 10750 2775 50  0001 C CNN
-F 1 "+5VA" V 10765 3053 50  0000 L CNN
-F 2 "" H 10750 2925 50  0001 C CNN
-F 3 "" H 10750 2925 50  0001 C CNN
-	1    10750 2925
+P 10400 2975
+F 0 "#PWR025" H 10400 2825 50  0001 C CNN
+F 1 "+5VA" V 10415 3103 50  0000 L CNN
+F 2 "" H 10400 2975 50  0001 C CNN
+F 3 "" H 10400 2975 50  0001 C CNN
+	1    10400 2975
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GNDA #PWR021
 U 1 1 5E8BFD09
-P 10750 2725
-F 0 "#PWR021" H 10750 2475 50  0001 C CNN
-F 1 "GNDA" V 10755 2597 50  0000 R CNN
-F 2 "" H 10750 2725 50  0001 C CNN
-F 3 "" H 10750 2725 50  0001 C CNN
-	1    10750 2725
+P 10400 2775
+F 0 "#PWR021" H 10400 2525 50  0001 C CNN
+F 1 "GNDA" V 10405 2647 50  0000 R CNN
+F 2 "" H 10400 2775 50  0001 C CNN
+F 3 "" H 10400 2775 50  0001 C CNN
+	1    10400 2775
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9850 3025 10550 3025
+	9500 3075 10200 3075
 Wire Wire Line
-	10550 2825 9975 2825
-Text Notes 10200 2450 0    50   ~ 0
+	10200 2875 9625 2875
+Text Notes 9850 2500 0    50   ~ 0
 STARPOINT POWER\nCONNECTIONS AT\nCONTROLLER
 Text GLabel 2675 3875 0    50   Output ~ 0
 SENSE1
@@ -772,13 +772,13 @@ Text GLabel 7125 6000 2    50   BiDi ~ 0
 HEADER3
 Text GLabel 7125 6100 2    50   BiDi ~ 0
 HEADER4
-Text GLabel 8450 2725 0    50   BiDi ~ 0
+Text GLabel 8100 2775 0    50   BiDi ~ 0
 HEADER1
-Text GLabel 8450 2825 0    50   BiDi ~ 0
+Text GLabel 8100 2875 0    50   BiDi ~ 0
 HEADER2
-Text GLabel 9850 3225 2    50   BiDi ~ 0
+Text GLabel 9500 3275 2    50   BiDi ~ 0
 HEADER3
-Text GLabel 9850 3125 2    50   BiDi ~ 0
+Text GLabel 9500 3175 2    50   BiDi ~ 0
 HEADER4
 Text GLabel 6625 6200 0    50   BiDi ~ 0
 HEADER2
@@ -895,12 +895,12 @@ COL1
 $Comp
 L power:GNDD #PWR0103
 U 1 1 5F4E8027
-P 9850 3625
-F 0 "#PWR0103" H 9850 3375 50  0001 C CNN
-F 1 "GNDD" V 9854 3515 50  0000 R CNN
-F 2 "" H 9850 3625 50  0001 C CNN
-F 3 "" H 9850 3625 50  0001 C CNN
-	1    9850 3625
+P 9500 3675
+F 0 "#PWR0103" H 9500 3425 50  0001 C CNN
+F 1 "GNDD" V 9504 3565 50  0000 R CNN
+F 2 "" H 9500 3675 50  0001 C CNN
+F 3 "" H 9500 3675 50  0001 C CNN
+	1    9500 3675
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -918,12 +918,12 @@ SENSE2
 $Comp
 L promicro:ProMicro U5
 U 1 1 5E3248FF
-P 9150 3475
-F 0 "U5" H 9150 4512 60  0000 C CNN
-F 1 "ProMicro" H 9150 4406 60  0000 C CNN
-F 2 "promicro:ProMicro" H 9250 2425 60  0001 C CNN
-F 3 "" H 9250 2425 60  0000 C CNN
-	1    9150 3475
+P 8800 3525
+F 0 "U5" H 8800 4562 60  0000 C CNN
+F 1 "ProMicro" H 8800 4456 60  0000 C CNN
+F 2 "promicro:ProMicro" H 8900 2475 60  0001 C CNN
+F 3 "" H 8900 2475 60  0000 C CNN
+	1    8800 3525
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -974,17 +974,17 @@ Wire Wire Line
 $Comp
 L power:GNDD #PWR0107
 U 1 1 5F3A2D72
-P 9850 3825
-F 0 "#PWR0107" H 9850 3575 50  0001 C CNN
-F 1 "GNDD" V 9854 3715 50  0000 R CNN
-F 2 "" H 9850 3825 50  0001 C CNN
-F 3 "" H 9850 3825 50  0001 C CNN
-	1    9850 3825
-	0    -1   -1   0   
+P 10225 4175
+F 0 "#PWR0107" H 10225 3925 50  0001 C CNN
+F 1 "GNDD" H 10325 4050 50  0000 R CNN
+F 2 "" H 10225 4175 50  0001 C CNN
+F 3 "" H 10225 4175 50  0001 C CNN
+	1    10225 4175
+	1    0    0    -1  
 $EndComp
-Text Notes 9675 4475 0    50   ~ 0
-NOTE1: pin B3 is used to differentiate\nfrom the original TH Xwhatsit design\n\nNOTE2: pin B6 can also be an ADC\ninput, so we may use it in the\nfuture to determine board version\nby adding a voltage divider to this pin.
-Text GLabel 9850 2925 2    50   Input ~ 0
+Text Notes 8175 4675 0    50   ~ 0
+NOTE1: pin B3 is used to differentiate\nfrom the original TH Xwhatsit design\n\nNOTE2: pin B6 can be an ADC\ninput, so we may use it in the\nfuture to determine board version.\nVersion is specified by selecting\na voltage with a voltage divider.
+Text GLabel 9500 2975 2    50   Input ~ 0
 RST
 $Comp
 L Connector_Generic:Conn_01x30 J1
@@ -1065,37 +1065,73 @@ Wire Wire Line
 $Comp
 L Device:Net-Tie_3 NT1
 U 1 1 5F6D07D8
-P 10650 2825
-F 0 "NT1" H 10725 2750 50  0000 C CNN
-F 1 "Net-Tie_3" H 10650 2635 50  0000 C CNN
-F 2 "NetTie:NetTie-3_THT_Pad0.3mm" H 10650 2825 50  0001 C CNN
-F 3 "~" H 10650 2825 50  0001 C CNN
-	1    10650 2825
+P 10300 2875
+F 0 "NT1" H 10375 2800 50  0000 C CNN
+F 1 "Net-Tie_3" H 10300 2685 50  0000 C CNN
+F 2 "NetTie:NetTie-3_THT_Pad0.3mm" H 10300 2875 50  0001 C CNN
+F 3 "~" H 10300 2875 50  0001 C CNN
+	1    10300 2875
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:Net-Tie_3 NT2
 U 1 1 5F6D1B28
-P 10650 3025
-F 0 "NT2" H 10725 2950 50  0000 C CNN
-F 1 "Net-Tie_3" H 10625 3100 50  0000 C CNN
-F 2 "NetTie:NetTie-3_THT_Pad0.3mm" H 10650 3025 50  0001 C CNN
-F 3 "~" H 10650 3025 50  0001 C CNN
-	1    10650 3025
+P 10300 3075
+F 0 "NT2" H 10375 3000 50  0000 C CNN
+F 1 "Net-Tie_3" H 10275 3150 50  0000 C CNN
+F 2 "NetTie:NetTie-3_THT_Pad0.3mm" H 10300 3075 50  0001 C CNN
+F 3 "~" H 10300 3075 50  0001 C CNN
+	1    10300 3075
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8450 3025 8450 2925
+	8100 3075 8100 2975
 Wire Wire Line
-	8450 2925 7925 2925
+	8100 2975 7575 2975
 Wire Wire Line
-	7925 2925 7925 2375
+	7575 2975 7575 2425
 Wire Wire Line
-	7925 2375 9975 2375
+	7575 2425 9625 2425
 Wire Wire Line
-	9975 2375 9975 2825
-Connection ~ 8450 2925
-Connection ~ 9975 2825
+	9625 2425 9625 2875
+Connection ~ 8100 2975
+Connection ~ 9625 2875
 Wire Wire Line
-	9975 2825 9850 2825
+	9625 2875 9500 2875
+$Comp
+L Device:R R6
+U 1 1 5F3A43C9
+P 10225 3725
+F 0 "R6" H 10295 3771 50  0000 L CNN
+F 1 "Not Mounted, Shorted" H 10295 3680 50  0000 L CNN
+F 2 "TH-XWhatsIt:SHORTEDR_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10155 3725 50  0001 C CNN
+F 3 "~" H 10225 3725 50  0001 C CNN
+	1    10225 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5F3A4C74
+P 10225 4025
+F 0 "R7" H 10295 4071 50  0000 L CNN
+F 1 "Not Mounted" H 10295 3980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10155 4025 50  0001 C CNN
+F 3 "~" H 10225 4025 50  0001 C CNN
+	1    10225 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10225 3875 9500 3875
+Connection ~ 10225 3875
+$Comp
+L power:+5VD #PWR04
+U 1 1 5F3A9745
+P 10225 3575
+F 0 "#PWR04" H 10225 3425 50  0001 C CNN
+F 1 "+5VD" H 10150 3750 50  0000 L CNN
+F 2 "" H 10225 3575 50  0001 C CNN
+F 3 "" H 10225 3575 50  0001 C CNN
+	1    10225 3575
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
