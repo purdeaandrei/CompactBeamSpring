@@ -112,7 +112,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "TH-XWhatsIt_Gerber/"))
+      (outputdirectory "beam_p_gerbers/"))
   )
 
   (net 0 "")
