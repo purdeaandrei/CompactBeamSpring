@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/andrew/cap/TH-XWhatsIt_smd_beam/TH-XWhatsIt/TH-XWhatsIt.sch)
-    (date "Mon 17 Aug 2020 07:36:06 AM EEST")
+    (date "Mon 17 Aug 2020 04:31:09 PM EEST")
     (tool "Eeschema 5.1.6+dfsg1-1~bpo10+1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -16,16 +16,20 @@
         (comment (number 4) (value "Licenced under CERN OHL Version 1.2")))))
   (components
     (comp (ref U2)
-      (value LM339)
+      (value LM339A)
       (footprint Package_SO:SOIC-14_3.9x8.7mm_P1.27mm)
       (datasheet http://www.ti.com/lit/ds/symlink/lm339.pdf)
+      (fields
+        (field (name LCSC) C74559))
       (libsource (lib Comparator) (part LM339) (description "Quad Differential Comparators, DIP-14/SOIC-14/SSOP-14"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E31E713))
     (comp (ref U3)
-      (value 74HCT595)
+      (value 74AHC595)
       (footprint Package_SO:SOIC-16_3.9x9.9mm_P1.27mm)
       (datasheet https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf)
+      (fields
+        (field (name LCSC) C5520))
       (libsource (lib 74xx) (part 74HCT595) (description "8-bit serial in/out Shift Register 3-State Outputs"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E325C5B))
@@ -33,6 +37,8 @@
       (value 0U1)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C49678))
       (libsource (lib Device) (part C_Small) (description "Unpolarized capacitor, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E32B1F3))
@@ -40,6 +46,8 @@
       (value 0U1)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C49678))
       (libsource (lib Device) (part C_Small) (description "Unpolarized capacitor, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E34844A))
@@ -47,6 +55,8 @@
       (value 20K)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C4328))
       (libsource (lib Device) (part R_Small_US) (description "Resistor, small US symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E362740))
@@ -54,6 +64,8 @@
       (value 20K)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C4328))
       (libsource (lib Device) (part R_Small_US) (description "Resistor, small US symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E365666))
@@ -61,20 +73,26 @@
       (value 4K7)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C17673))
       (libsource (lib Device) (part R_Small_US) (description "Resistor, small US symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E365BE0))
     (comp (ref U4)
-      (value 74HCT595)
+      (value 74AHC595)
       (footprint Package_SO:SOIC-16_3.9x9.9mm_P1.27mm)
       (datasheet https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf)
+      (fields
+        (field (name LCSC) C5520))
       (libsource (lib 74xx) (part 74HCT595) (description "8-bit serial in/out Shift Register 3-State Outputs"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E38F62A))
     (comp (ref U7)
-      (value 74HCT595)
+      (value 74AHC595)
       (footprint Package_SO:SOIC-16_3.9x9.9mm_P1.27mm)
       (datasheet https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf)
+      (fields
+        (field (name LCSC) C5520))
       (libsource (lib 74xx) (part 74HCT595) (description "8-bit serial in/out Shift Register 3-State Outputs"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E395D6D))
@@ -82,6 +100,8 @@
       (value 0U1)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C49678))
       (libsource (lib Device) (part C_Small) (description "Unpolarized capacitor, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E395D79))
@@ -89,6 +109,8 @@
       (value 4K7)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C17673))
       (libsource (lib Device) (part R_Small_US) (description "Resistor, small US symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E3E384B))
@@ -96,13 +118,17 @@
       (value 1K)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C17513))
       (libsource (lib Device) (part R_Small_US) (description "Resistor, small US symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E3E385D))
     (comp (ref U1)
-      (value MCP4921-EP)
+      (value MCP4921-E)
       (footprint Package_SO:SOIC-8_3.9x4.9mm_P1.27mm)
       (datasheet http://ww1.microchip.com/downloads/en/devicedoc/21897a.pdf)
+      (fields
+        (field (name LCSC) C43499))
       (libsource (lib Analog_DAC) (part MCP4921-EP) (description "Single 12-bit Digital to Analog Converter, SPI Interface, PDIP-8"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E6B97E9))
@@ -110,6 +136,8 @@
       (value 0U1)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C49678))
       (libsource (lib Device) (part C_Small) (description "Unpolarized capacitor, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E3583B5))
@@ -117,6 +145,8 @@
       (value 0U1)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C49678))
       (libsource (lib Device) (part C_Small) (description "Unpolarized capacitor, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E52275D))
@@ -131,6 +161,8 @@
       (value 100K)
       (footprint Resistor_SMD:R_Array_Convex_4x0603)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C173315))
       (libsource (lib Device) (part R_Pack04) (description "4 resistor network, parallel topology, DIP package"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5F34F20A))
@@ -138,6 +170,8 @@
       (value 0U1)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
+      (fields
+        (field (name LCSC) C49678))
       (libsource (lib Device) (part C_Small) (description "Unpolarized capacitor, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E38F636))
