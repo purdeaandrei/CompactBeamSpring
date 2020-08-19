@@ -1,3 +1,5 @@
+Compact Beamspring controller, based on TH Xwhatsit.
+
 through hole implementation of the capsense controllers by XWhatsIt
 (Tom Wong-Cornall). original liscencure holds, as well as CERN OSH
 (compatible license).
