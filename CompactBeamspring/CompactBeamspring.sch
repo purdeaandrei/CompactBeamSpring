@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "THT-XWhatsIt combined beamspring and model f controller"
+Title "Compact Beamspring Controller Based on TH Xwhatsit"
 Date "2020-01-31"
-Rev "0.0.2"
+Rev "1.2"
 Comp "Rainy Day Plans"
 Comment1 ""
 Comment2 ""
@@ -125,22 +125,14 @@ Wire Wire Line
 Text GLabel 9500 3575 2    50   Output ~ 0
 CLOCK
 NoConn ~ 9500 2775
-Text GLabel 8100 3875 0    50   Input ~ 0
-ROW1
-Text GLabel 8100 3375 0    50   Input ~ 0
-ROW2
-Text GLabel 8100 3775 0    50   Input ~ 0
-ROW3
-Text GLabel 8100 3575 0    50   Input ~ 0
-ROW4
-Text GLabel 8100 3475 0    50   Input ~ 0
-ROW5
-Text GLabel 8100 3675 0    50   Input ~ 0
-ROW6
 Text GLabel 8100 3275 0    50   Input ~ 0
-ROW7
+ROW1
 Text GLabel 8100 3175 0    50   Input ~ 0
-ROW8
+ROW2
+Text GLabel 8100 3475 0    50   Input ~ 0
+ROW3
+Text GLabel 8100 3375 0    50   Input ~ 0
+ROW4
 $Comp
 L 74xx:74HCT595 U4
 U 1 1 5E38F62A
@@ -382,7 +374,7 @@ Text GLabel 9500 3375 2    50   Output ~ 0
 Text GLabel 8475 1400 0    50   Input ~ 0
 ~SELECTDAC
 Wire Wire Line
-	9675 1400 10050 1400
+	9675 1400 9850 1400
 Wire Wire Line
 	9175 1875 9175 1800
 Wire Wire Line
@@ -742,10 +734,6 @@ F 3 "" H 10400 2775 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9500 3075 10200 3075
-Wire Wire Line
-	10200 2875 9625 2875
-Text Notes 9850 2500 0    50   ~ 0
-STARPOINT POWER\nCONNECTIONS AT\nCONTROLLER
 Text GLabel 2675 3875 0    50   Output ~ 0
 SENSE1
 Text GLabel 2675 3975 0    50   Output ~ 0
@@ -791,13 +779,13 @@ Text GLabel 7125 6000 2    50   BiDi ~ 0
 HEADER3
 Text GLabel 7125 6100 2    50   BiDi ~ 0
 HEADER4
-Text GLabel 8100 2775 0    50   BiDi ~ 0
+Text GLabel 8100 3575 0    50   BiDi ~ 0
 HEADER1
-Text GLabel 8100 2875 0    50   BiDi ~ 0
+Text GLabel 8100 3675 0    50   BiDi ~ 0
 HEADER2
-Text GLabel 9500 3275 2    50   BiDi ~ 0
+Text GLabel 8100 2775 0    50   BiDi ~ 0
 HEADER3
-Text GLabel 9500 3175 2    50   BiDi ~ 0
+Text GLabel 8100 2875 0    50   BiDi ~ 0
 HEADER4
 Text GLabel 6625 6200 0    50   BiDi ~ 0
 HEADER2
@@ -805,10 +793,6 @@ Text GLabel 6625 6100 0    50   BiDi ~ 0
 HEADER1
 Text Notes 3950 7750 0    50   ~ 0
 Copyright Rainy Day Plans.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable\nconditions
-Text GLabel 10600 1400 2    50   Output ~ 0
-SETPOINT
-Wire Wire Line
-	10275 1400 10600 1400
 Text GLabel 2675 5075 0    50   Input ~ 0
 COL16
 Text GLabel 2675 4975 0    50   Input ~ 0
@@ -913,17 +897,6 @@ Text GLabel 5675 1275 2    50   Output ~ 0
 COL2
 Text GLabel 5675 1175 2    50   Output ~ 0
 COL1
-$Comp
-L power:GNDD #PWR0103
-U 1 1 5F4E8027
-P 9500 3675
-F 0 "#PWR0103" H 9500 3425 50  0001 C CNN
-F 1 "GNDD" V 9504 3565 50  0000 R CNN
-F 2 "" H 9500 3675 50  0001 C CNN
-F 3 "" H 9500 3675 50  0001 C CNN
-	1    9500 3675
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2600 1575 3500 1575
 Wire Wire Line
@@ -1003,8 +976,8 @@ F 3 "" H 10225 4175 50  0001 C CNN
 	1    10225 4175
 	1    0    0    -1  
 $EndComp
-Text Notes 8175 4675 0    50   ~ 0
-NOTE1: pin B3 is used to differentiate\nfrom the original TH Xwhatsit design\n\nNOTE2: pin B6 can be an ADC\ninput, so we may use it in the\nfuture to determine board version.\nVersion is specified by selecting\na voltage with a voltage divider.
+Text Notes 8075 4850 0    50   ~ 0
+NOTE1: pin B3 grounded will mean in the\nfuture that it's a controller needs to be driven\ndifferently by software, compared to\nthe original TH Xwhatsit design.\n\nNOTE2: pin B6 can be an ADC\ninput, so we may use it in the\nfuture to determine board version.\nVersion is specified by selecting\na voltage with a voltage divider.
 Text GLabel 9500 2975 2    50   Input ~ 0
 RST
 $Comp
@@ -1124,8 +1097,8 @@ L Device:R R6
 U 1 1 5F3A43C9
 P 10225 3725
 F 0 "R6" H 10295 3771 50  0000 L CNN
-F 1 "Not Mounted, Shorted" H 10295 3680 50  0000 L CNN
-F 2 "TH-XWhatsIt:SHORTEDR_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10155 3725 50  0001 C CNN
+F 1 "Not Mounted" H 10295 3680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10155 3725 50  0001 C CNN
 F 3 "~" H 10225 3725 50  0001 C CNN
 	1    10225 3725
 	1    0    0    -1  
@@ -1177,4 +1150,112 @@ F 3 "" H 8725 5450 50  0001 C CNN
 	1    8725 5450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R8
+U 1 1 5F3FF7BC
+P 9950 4450
+F 0 "R8" H 10020 4496 50  0000 L CNN
+F 1 "Not Mounted" H 10020 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9880 4450 50  0001 C CNN
+F 3 "~" H 9950 4450 50  0001 C CNN
+	1    9950 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR07
+U 1 1 5F40026A
+P 9950 4600
+F 0 "#PWR07" H 9950 4350 50  0001 C CNN
+F 1 "GNDD" H 10050 4475 50  0000 R CNN
+F 2 "" H 9950 4600 50  0001 C CNN
+F 3 "" H 9950 4600 50  0001 C CNN
+	1    9950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 4300 9950 3675
+Wire Wire Line
+	9950 3675 9500 3675
+NoConn ~ 9500 3175
+NoConn ~ 9500 3275
+NoConn ~ 8100 3775
+NoConn ~ 8100 3875
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F542CCD
+P 7450 5050
+F 0 "J2" H 7530 5042 50  0000 L CNN
+F 1 "PadsToShort" H 7530 4951 50  0000 L CNN
+F 2 "TH-XWhatsIt:PadsToShort" H 7450 5050 50  0001 C CNN
+F 3 "~" H 7450 5050 50  0001 C CNN
+	1    7450 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 7250 5050 0    50   Output ~ 0
+RST
+Wire Wire Line
+	9925 2875 9625 2875
+Wire Wire Line
+	10200 2875 9925 2875
+Connection ~ 9925 2875
+$Comp
+L power:GND #PWR012
+U 1 1 5F547233
+P 9925 2875
+F 0 "#PWR012" H 9925 2625 50  0001 C CNN
+F 1 "GND" H 10025 2750 50  0000 C CNN
+F 2 "" H 9925 2875 50  0001 C CNN
+F 3 "" H 9925 2875 50  0001 C CNN
+	1    9925 2875
+	1    0    0    -1  
+$EndComp
+Text Notes 9850 2500 0    50   ~ 0
+STARPOINT POWER\nCONNECTIONS AT\nCONTROLLER
+$Comp
+L power:GND #PWR08
+U 1 1 5F54D22D
+P 7250 5150
+F 0 "#PWR08" H 7250 4900 50  0001 C CNN
+F 1 "GND" H 7255 4977 50  0000 C CNN
+F 2 "" H 7250 5150 50  0001 C CNN
+F 3 "" H 7250 5150 50  0001 C CNN
+	1    7250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F54F052
+P 9850 875
+F 0 "TP1" H 9908 993 50  0000 L CNN
+F 1 "Dac Output" H 9700 1075 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10050 875 50  0001 C CNN
+F 3 "~" H 10050 875 50  0001 C CNN
+	1    9850 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F551CEB
+P 10550 875
+F 0 "TP2" H 10608 993 50  0000 L CNN
+F 1 "Threshold Voltage" H 10300 1075 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10750 875 50  0001 C CNN
+F 3 "~" H 10750 875 50  0001 C CNN
+	1    10550 875 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 875  9850 1400
+Connection ~ 9850 1400
+Wire Wire Line
+	9850 1400 10050 1400
+Wire Wire Line
+	10550 875  10550 1400
+Connection ~ 10550 1400
+Wire Wire Line
+	10275 1400 10550 1400
+Text GLabel 10650 1400 2    50   Output ~ 0
+SETPOINT
+Wire Wire Line
+	10550 1400 10650 1400
 $EndSCHEMATC
