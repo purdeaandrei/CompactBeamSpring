@@ -1021,7 +1021,7 @@
       (net 25 SENSE2))
     (pad 1 thru_hole oval (at -57.42 0 180) (size 3.42 1.55) (drill oval 2.7 0.8) (layers *.Cu *.Mask)
       (net 24 SENSE1))
-    (model cardedge.step
+    (model ${KIPRJMOD}/../libraries/3d_cardedge/cardedge.step
       (offset (xyz 78.5 -18.5 8.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -1151,7 +1151,7 @@
       (net 57 "Net-(NT1-Pad2)"))
     (pad 24 thru_hole circle (at -13.97 -7.62) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask F.SilkS)
       (net 59 "Net-(U5-Pad24)"))
-    (model Pro_Micro.x3d
+    (model ${KIPRJMOD}/../libraries/3d_sparkfun_promicro/Pro_Micro.x3d
       (offset (xyz 15.5 -9 3))
       (scale (xyz 0.4 0.4 0.4))
       (rotate (xyz -90 0 90))
