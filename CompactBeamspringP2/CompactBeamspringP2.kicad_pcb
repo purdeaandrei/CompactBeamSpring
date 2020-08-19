@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 55)
+    (drawings 56)
     (tracks 1218)
     (zones 0)
     (modules 54)
@@ -77,7 +77,7 @@
     (pad_to_mask_clearance 0.0508)
     (solder_mask_min_width 0.101)
     (aux_axis_origin 108.7 141.35)
-    (visible_elements 7FFFFF7F)
+    (visible_elements 7FFFF77F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -2569,6 +2569,9 @@
     )
   )
 
+  (gr_text JLCJLCJLCJLC (at 198.5 134.1) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_arc (start 266.75 127.5) (end 266.75 128.1) (angle -180) (layer Edge.Cuts) (width 0.05) (tstamp 5F3CFB4D))
   (gr_arc (start 270.35 127.5) (end 270.35 126.9) (angle -180) (layer Edge.Cuts) (width 0.05) (tstamp 5F3CFB4C))
   (gr_arc (start 266.75 127.5) (end 266.75 126.9) (angle -180) (layer Edge.Cuts) (width 0.05) (tstamp 5F3CFB4B))
