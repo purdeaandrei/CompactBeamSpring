@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Compact Beamspring Controller Based on TH Xwhatsit"
 Date "2020-01-31"
-Rev "1.2"
+Rev "1.3"
 Comp "Rainy Day Plans"
 Comment1 ""
 Comment2 ""
@@ -224,18 +224,6 @@ Text GLabel 5675 5325 2    50   Output ~ 0
 COL23
 $Comp
 L Comparator:LM339 U2
-U 1 1 5E3E3833
-P 2300 1575
-F 0 "U2" H 2300 1942 50  0000 C CNN
-F 1 "LM339A" H 2300 1851 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2250 1675 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 2350 1775 50  0001 C CNN
-F 4 "C74559" H 2300 1575 50  0001 C CNN "LCSC"
-	1    2300 1575
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM339 U2
 U 2 1 5E3E3839
 P 2300 2175
 F 0 "U2" H 2300 2542 50  0000 C CNN
@@ -310,10 +298,8 @@ Wire Wire Line
 Wire Wire Line
 	1925 3475 2000 3475
 Connection ~ 1925 2875
-Text GLabel 1150 1475 0    50   Input ~ 0
+Text GLabel 1150 2075 0    50   Input ~ 0
 SENSE1
-Text GLabel 1150 3275 0    50   Input ~ 0
-SENSE4
 Wire Wire Line
 	1925 3475 1150 3475
 Connection ~ 1925 3475
@@ -417,46 +403,6 @@ F 4 "C49678" H 8325 925 50  0001 C CNN "LCSC"
 	1    8325 925 
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1150 1475 1625 1475
-Wire Wire Line
-	1625 1475 1625 1375
-Wire Wire Line
-	1150 2075 1525 2075
-Wire Wire Line
-	1525 2075 1525 1550
-Wire Wire Line
-	1425 1375 1425 2675
-Wire Wire Line
-	1425 2675 1150 2675
-Wire Wire Line
-	1325 1375 1325 2750
-Wire Wire Line
-	1325 3275 1150 3275
-Wire Wire Line
-	2000 2075 1625 2075
-Wire Wire Line
-	1625 2075 1625 1475
-Connection ~ 1625 1475
-Wire Wire Line
-	1525 1550 2000 1550
-Wire Wire Line
-	2000 1550 2000 1475
-Connection ~ 1525 1550
-Wire Wire Line
-	1525 1550 1525 1375
-Wire Wire Line
-	2000 3275 1425 3275
-Wire Wire Line
-	1425 3275 1425 2675
-Connection ~ 1425 2675
-Wire Wire Line
-	1325 2750 2000 2750
-Wire Wire Line
-	2000 2750 2000 2675
-Connection ~ 1325 2750
-Wire Wire Line
-	1325 2750 1325 3275
 $Comp
 L power:GNDA #PWR014
 U 1 1 5E814765
@@ -812,26 +758,6 @@ COL23
 Text GLabel 2675 5175 0    50   Input ~ 0
 COL15
 $Comp
-L Device:R_Pack04 RN1
-U 1 1 5F34F20A
-P 1525 1175
-F 0 "RN1" H 1713 1221 50  0000 L CNN
-F 1 "100K" H 1713 1130 50  0000 L CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 1800 1175 50  0001 C CNN
-F 3 "~" H 1525 1175 50  0001 C CNN
-F 4 "C173315" H 1525 1175 50  0001 C CNN "LCSC"
-	1    1525 1175
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	1325 975  1425 975 
-Connection ~ 1425 975 
-Wire Wire Line
-	1425 975  1525 975 
-Connection ~ 1525 975 
-Wire Wire Line
-	1525 975  1625 975 
-$Comp
 L power:GNDA #PWR0101
 U 1 1 5F3AA298
 P 4350 6475
@@ -842,8 +768,6 @@ F 3 "" H 4350 6475 50  0001 C CNN
 	1    4350 6475
 	1    0    0    -1  
 $EndComp
-Text GLabel 1325 975  1    50   UnSpc ~ 0
-BIAS
 Wire Wire Line
 	4350 6225 4350 6250
 Text GLabel 4300 6250 0    50   UnSpc ~ 0
@@ -905,9 +829,9 @@ Wire Wire Line
 	2600 2175 3500 2175
 Wire Wire Line
 	2600 3375 3500 3375
-Text GLabel 1150 2675 0    50   Input ~ 0
+Text GLabel 1150 3275 0    50   Input ~ 0
 SENSE3
-Text GLabel 1150 2075 0    50   Input ~ 0
+Text GLabel 1150 1475 0    50   Input ~ 0
 SENSE2
 $Comp
 L promicro:ProMicro U5
@@ -1258,4 +1182,94 @@ Text GLabel 10650 1400 2    50   Output ~ 0
 SETPOINT
 Wire Wire Line
 	10550 1400 10650 1400
+$Comp
+L Device:R R9
+U 1 1 5F3E1654
+P 1450 1325
+F 0 "R9" H 1520 1371 50  0000 L CNN
+F 1 "100k 1%" H 1520 1280 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1380 1325 50  0001 C CNN
+F 3 "~" H 1450 1325 50  0001 C CNN
+F 4 "C17407" H 1450 1325 50  0001 C CNN "LCSC"
+	1    1450 1325
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 1175 1    50   UnSpc ~ 0
+BIAS
+$Comp
+L Comparator:LM339 U2
+U 1 1 5E3E3833
+P 2300 1575
+F 0 "U2" H 2300 1942 50  0000 C CNN
+F 1 "LM339A" H 2300 1851 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2250 1675 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 2350 1775 50  0001 C CNN
+F 4 "C74559" H 2300 1575 50  0001 C CNN "LCSC"
+	1    2300 1575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1475 1450 1475
+$Comp
+L Device:R R10
+U 1 1 5F3FE715
+P 1450 1925
+F 0 "R10" H 1520 1971 50  0000 L CNN
+F 1 "100k 1%" H 1520 1880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1380 1925 50  0001 C CNN
+F 3 "~" H 1450 1925 50  0001 C CNN
+F 4 "C17407" H 1450 1925 50  0001 C CNN "LCSC"
+	1    1450 1925
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 1775 1    50   UnSpc ~ 0
+BIAS
+Wire Wire Line
+	1150 2075 1450 2075
+Text GLabel 1150 2675 0    50   Input ~ 0
+SENSE4
+Wire Wire Line
+	1150 3275 1450 3275
+$Comp
+L Device:R R11
+U 1 1 5F434C9D
+P 1450 2525
+F 0 "R11" H 1520 2571 50  0000 L CNN
+F 1 "100k 1%" H 1520 2480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1380 2525 50  0001 C CNN
+F 3 "~" H 1450 2525 50  0001 C CNN
+F 4 "C17407" H 1450 2525 50  0001 C CNN "LCSC"
+	1    1450 2525
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 2375 1    50   UnSpc ~ 0
+BIAS
+$Comp
+L Device:R R12
+U 1 1 5F43B7B4
+P 1450 3125
+F 0 "R12" H 1520 3171 50  0000 L CNN
+F 1 "100k 1%" H 1520 3080 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1380 3125 50  0001 C CNN
+F 3 "~" H 1450 3125 50  0001 C CNN
+F 4 "C17407" H 1450 3125 50  0001 C CNN "LCSC"
+	1    1450 3125
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 2975 1    50   UnSpc ~ 0
+BIAS
+Connection ~ 1450 1475
+Wire Wire Line
+	1450 1475 2000 1475
+Connection ~ 1450 2075
+Wire Wire Line
+	1450 2075 2000 2075
+Connection ~ 1450 2675
+Wire Wire Line
+	1450 2675 1150 2675
+Wire Wire Line
+	1450 2675 2000 2675
+Connection ~ 1450 3275
+Wire Wire Line
+	1450 3275 2000 3275
 $EndSCHEMATC
