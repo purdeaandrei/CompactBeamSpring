@@ -60,3 +60,8 @@ Unknown Date
             Removed usage of resistor networks, now using individual resistors.
             Reverted some pinout changes to make it compatible to the original TH-Xwhatsit
             PCB layout re-done from scratch, to be as small as possible.
+May 3, 2021
+    user: purdeaandrei
+        done:
+            Updated Pro Micro schematic symbol, to correct pin names, and be more verbose.
+            Added schematics in pdf form.

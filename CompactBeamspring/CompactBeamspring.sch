@@ -125,13 +125,13 @@ Wire Wire Line
 Text GLabel 9500 3575 2    50   Output ~ 0
 CLOCK
 NoConn ~ 9500 2775
-Text GLabel 8100 3275 0    50   Input ~ 0
+Text GLabel 7900 3275 0    50   Input ~ 0
 ROW1
-Text GLabel 8100 3175 0    50   Input ~ 0
+Text GLabel 7900 3175 0    50   Input ~ 0
 ROW2
-Text GLabel 8100 3475 0    50   Input ~ 0
+Text GLabel 7900 3475 0    50   Input ~ 0
 ROW3
-Text GLabel 8100 3375 0    50   Input ~ 0
+Text GLabel 7900 3375 0    50   Input ~ 0
 ROW4
 $Comp
 L 74xx:74HCT595 U4
@@ -678,8 +678,6 @@ F 3 "" H 10400 2775 50  0001 C CNN
 	1    10400 2775
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9500 3075 10200 3075
 Text GLabel 2675 3875 0    50   Output ~ 0
 SENSE1
 Text GLabel 2675 3975 0    50   Output ~ 0
@@ -725,13 +723,13 @@ Text GLabel 7125 6000 2    50   BiDi ~ 0
 HEADER3
 Text GLabel 7125 6100 2    50   BiDi ~ 0
 HEADER4
-Text GLabel 8100 3575 0    50   BiDi ~ 0
+Text GLabel 7900 3575 0    50   BiDi ~ 0
 HEADER1
-Text GLabel 8100 3675 0    50   BiDi ~ 0
+Text GLabel 7900 3675 0    50   BiDi ~ 0
 HEADER2
-Text GLabel 8100 2775 0    50   BiDi ~ 0
+Text GLabel 7900 2775 0    50   BiDi ~ 0
 HEADER3
-Text GLabel 8100 2875 0    50   BiDi ~ 0
+Text GLabel 7900 2875 0    50   BiDi ~ 0
 HEADER4
 Text GLabel 6625 6200 0    50   BiDi ~ 0
 HEADER2
@@ -836,12 +834,12 @@ SENSE2
 $Comp
 L promicro:ProMicro U5
 U 1 1 5E3248FF
-P 8800 3525
-F 0 "U5" H 8800 4562 60  0000 C CNN
-F 1 "ProMicro" H 8800 4456 60  0000 C CNN
-F 2 "promicro:ProMicro" H 8900 2475 60  0001 C CNN
-F 3 "" H 8900 2475 60  0000 C CNN
-	1    8800 3525
+P 8700 3525
+F 0 "U5" H 8700 4562 60  0000 C CNN
+F 1 "ProMicro" H 8700 4456 60  0000 C CNN
+F 2 "promicro:ProMicro" H 8800 2475 60  0001 C CNN
+F 3 "" H 8800 2475 60  0000 C CNN
+	1    8700 3525
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1003,16 +1001,9 @@ F 3 "~" H 10300 3075 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8100 3075 8100 2975
-Wire Wire Line
-	8100 2975 7575 2975
-Wire Wire Line
-	7575 2975 7575 2425
-Wire Wire Line
-	7575 2425 9625 2425
+	7900 3075 7900 2975
 Wire Wire Line
 	9625 2425 9625 2875
-Connection ~ 8100 2975
 Connection ~ 9625 2875
 Wire Wire Line
 	9625 2875 9500 2875
@@ -1038,8 +1029,6 @@ F 3 "~" H 10225 4025 50  0001 C CNN
 	1    10225 4025
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10225 3875 9500 3875
 Connection ~ 10225 3875
 $Comp
 L power:+5VD #PWR04
@@ -1098,12 +1087,10 @@ F 3 "" H 9950 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9950 4300 9950 3675
-Wire Wire Line
-	9950 3675 9500 3675
 NoConn ~ 9500 3175
 NoConn ~ 9500 3275
-NoConn ~ 8100 3775
-NoConn ~ 8100 3875
+NoConn ~ 7900 3775
+NoConn ~ 7900 3875
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5F542CCD
@@ -1117,8 +1104,6 @@ F 3 "~" H 7450 5050 50  0001 C CNN
 $EndComp
 Text GLabel 7250 5050 0    50   Output ~ 0
 RST
-Wire Wire Line
-	9925 2875 9625 2875
 Wire Wire Line
 	10200 2875 9925 2875
 Connection ~ 9925 2875
@@ -1272,4 +1257,19 @@ Wire Wire Line
 Connection ~ 1450 3275
 Wire Wire Line
 	1450 3275 2000 3275
+Connection ~ 7900 2975
+Wire Wire Line
+	9500 3075 10200 3075
+Wire Wire Line
+	9500 3875 10225 3875
+Wire Wire Line
+	9500 3675 9950 3675
+Wire Wire Line
+	9625 2875 9925 2875
+Wire Wire Line
+	7375 2975 7900 2975
+Wire Wire Line
+	7375 2425 7375 2975
+Wire Wire Line
+	7375 2425 9625 2425
 $EndSCHEMATC
