@@ -1,0 +1,1 @@
+The items in this folder are all covered by the license of the overall project. (CERN OHL 1.2)
