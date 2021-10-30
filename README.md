@@ -14,8 +14,7 @@ original implementation of Tom Wong-Cornall's controller documented here
 
 http://downloads.cornall.co/ibm-capsense-usb-web/ibm-capsense-usb.html
 
-component documentation is supplied, working theory of operation is under
-the previous link.
+Working theory of operation is under the previous link.
 
 
 

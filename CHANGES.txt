@@ -65,3 +65,8 @@ May 3, 2021
         done:
             Updated Pro Micro schematic symbol, to correct pin names, and be more verbose.
             Added schematics in pdf form.
+
+Oct 30, 2021
+    user: purdeaandrei
+        done:
+            Removed datasheets
