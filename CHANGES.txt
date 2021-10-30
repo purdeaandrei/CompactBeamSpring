@@ -70,3 +70,4 @@ Oct 30, 2021
     user: purdeaandrei
         done:
             Removed datasheets
+            Updated some licensing info
