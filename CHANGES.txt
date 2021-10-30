@@ -72,3 +72,5 @@ Oct 30, 2021
             Removed datasheets
             Updated some licensing info
             Pro Micro 3D model: added pins
+            Solenoid header, use 90-degree 3d model
+            Added rendered images, tweaked readme
