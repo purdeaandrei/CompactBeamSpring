@@ -71,3 +71,4 @@ Oct 30, 2021
         done:
             Removed datasheets
             Updated some licensing info
+            Pro Micro 3D model: added pins

@@ -1,4 +1,4 @@
-(module ProMicro (layer F.Cu) (tedit 5A06A962)
+(module ProMicro (layer F.Cu) (tedit 5FB4DF8E)
   (descr "Pro Micro footprint")
   (tags "promicro ProMicro")
   (fp_text reference REF** (at 0 -10.16) (layer F.SilkS) hide
@@ -47,4 +47,19 @@
   (pad 22 thru_hole circle (at -8.89 -7.62) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask F.SilkS))
   (pad 23 thru_hole circle (at -11.43 -7.62) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask F.SilkS))
   (pad 24 thru_hole circle (at -13.97 -7.62) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask F.SilkS))
+  (model ${KIPRJMOD}/../libraries/3d_sparkfun_promicro/Pro_Micro.x3d
+    (offset (xyz 15.25 -8.9 3))
+    (scale (xyz 0.3937 0.3937 0.3937))
+    (rotate (xyz -90 0 90))
+  )
+  (model ${KIPRJMOD}/../libraries/promicro_pins/ppin.x3d
+    (offset (xyz 13.98 7.62 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
+  (model ${KIPRJMOD}/../libraries/promicro_pins/ppin.x3d
+    (offset (xyz 13.98 -7.62 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )
