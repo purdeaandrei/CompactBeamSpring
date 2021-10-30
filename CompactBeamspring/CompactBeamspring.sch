@@ -910,7 +910,7 @@ AR Path="/5F3A4341" Ref="J1"  Part="1"
 AR Path="/5E9772A5/5F3A4341" Ref="J?"  Part="1" 
 F 0 "J1" H 2955 5267 50  0000 L CNN
 F 1 "BEAMSPRING CONNECTOR" H 2955 5176 50  0000 L CNN
-F 2 "TH-XWhatsIt:30-pin-universal-beamspring-connector_v2" H 2875 5275 50  0001 C CNN
+F 2 "TH-XWhatsIt:30-pin-universal-beamspring-connector_v3_onlyflat" H 2875 5275 50  0001 C CNN
 F 3 "~" H 2875 5275 50  0001 C CNN
 	1    2875 5275
 	1    0    0    -1  
