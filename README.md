@@ -1,12 +1,19 @@
 # Compact Beamspring controller.
 
-This version only supports new style card edge connectors only, and it requires the side
+This controller only supports new style card edge connectors only, and it requires the side
 of the card edge connector to be cut off, and the pins be bent 90 degress.
 
 ## Images
 
 ![Top of the controller board](images/top.png)
 ![Bottom of the controller board](images/bottom.png)
+
+## Other controllers in this family:
+* https://github.com/purdeaandrei/CompactBeamSpringAdditionalExpansion
+* https://github.com/purdeaandrei/SMDModelFController
+* https://github.com/purdeaandrei/SMDModelFController/tree/extra_columns
+* https://github.com/purdeaandrei/SMD4704KishsaverClassModelFController
+* https://github.com/listofoptions/TH-XWhatsIt
 
 ## Origins and license
 
